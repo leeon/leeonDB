@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>leeonDB test</title>
+<script type="text/javascript" src="leeonDB.js"></script>
+
+<script type="text/javascript">
+	var db = new DB("LOCALSTORAGE");
+
+    if(db.set("HZ",true)){
+        alert("actually we get "+db.get("HZ","false"));
+    }
+
+</script>
+</head>
+<body>
+	<p>This is a show text.</p>
+</body>
+</html>
